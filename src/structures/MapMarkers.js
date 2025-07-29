@@ -303,9 +303,10 @@ class MapMarkers {
         let leftMarkers = this.getLeftMarkersOfTypeXY(this.types.VendingMachine, mapMarkers.markers);
         let remainingMarkers = this.getRemainingMarkersOfTypeXY(this.types.VendingMachine, mapMarkers.markers);
 
+        let mapSize = this.rustplus.info.correctedMapSize;
+
         /* VendingMachine markers that are new. */
         for (let marker of newMarkers) {
-            let mapSize = this.rustplus.info.correctedMapSize;
             let pos = Map.getPos(marker.x, marker.y, mapSize, this.rustplus);
 
             marker.location = pos;
@@ -327,6 +328,16 @@ class MapMarkers {
         /* VendingMachine markers that have left. */
         for (let marker of leftMarkers) {
             this.vendingMachines = this.vendingMachines.filter(e => e.x !== marker.x) || e.y !== marker.y;
+
+            let pos = Map.getPos(marker.x, marker.y, mapSize, this.rustplus);
+            
+            marker.location = pos;
+
+            this.rustplus.sendEvent(
+                this.rustplus.notificationSettings.vendingMachineDetectedSetting,
+                this.client.intlGet(this.rustplus.guildId, 'vendingMachineOffline', { location: pos.string }),
+                null,
+                Constants.COLOR_INACTIVE);
         }
 
         /* VendingMachine markers that still remains. */

@@ -776,6 +776,7 @@
     "value": "Değer",
     "vendingMachine": "Market",
     "vendingMachineDetectedSetting": "Yeni market açıldığında bildirim gönder.",
+    "vendingMachineOffline": "Vending machine offline at {location}.",
     "voiceCap": "SES",
     "warningCap": "UYARI",
     "waterTreatmentPlant": "Su Arıtma Tesisi",

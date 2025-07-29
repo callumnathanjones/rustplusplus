@@ -776,6 +776,7 @@
     "value": "Hodnota",
     "vendingMachine": "Prodejní automat",
     "vendingMachineDetectedSetting": "Když je nalezen nový prodejní automat, pošli oznámení.",
+    "vendingMachineOffline": "Vending machine offline at {location}.",
     "voiceCap": "ZVUK",
     "warningCap": "VAROVÁNÍ",
     "waterTreatmentPlant": "Čistička odpadních vod",

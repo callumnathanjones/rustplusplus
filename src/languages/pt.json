@@ -776,6 +776,7 @@
     "value": "Valor",
     "vendingMachine": "Máquina de Venda",
     "vendingMachineDetectedSetting": "Quando uma nova Máquina de Venda Automática for detetada, envia uma notificação.",
+    "vendingMachineOffline": "Vending machine offline at {location}.",
     "voiceCap": "VOZ",
     "warningCap": "AVISO",
     "waterTreatmentPlant": "Estação de Tratamento de Água",

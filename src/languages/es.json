@@ -776,6 +776,7 @@
     "value": "Value",
     "vendingMachine": "Máquina Expendedora",
     "vendingMachineDetectedSetting": "Cuando se detecte una nueva máquina expendedora, envíe una notificación.",
+    "vendingMachineOffline": "Vending machine offline at {location}.",
     "voiceCap": "VOZ",
     "warningCap": "ADVERTENCIA",
     "waterTreatmentPlant": "Planta potabilizadora",
